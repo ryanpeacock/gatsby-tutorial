@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `💀🔥Gatsby Tutorial🔥💀`,
+    description: `Okay, well, so basically this is a tutorial site`,
+    author: `🤴🏻King Ryan🤴🏻`,
+    createdAt: 2021,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,6 +13,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-transformer-sharp`,
